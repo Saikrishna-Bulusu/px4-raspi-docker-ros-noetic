@@ -92,8 +92,11 @@ WORKDIR /home/user/work
 RUN mkdir -p /home/user/work
 COPY get_src.sh /home/user/get_src.sh
 
-COPY install/px4_setup.sh /home/user/px4_setup.sh
-RUN bash /home/user/px4_setup.sh && rm /home/user/px4_setup.sh
+#COPY install/px4_setup.sh /home/user/px4_setup.sh
+#RUN bash /home/user/px4_setup.sh && rm /home/user/px4_setup.sh
+
+COPY install/mavros_setup.sh /home/user/mavros_setup.sh
+RUN bash /home/user/mavros_setup.sh /home/user/mavros_setup.sh
 
 # setup entry point
 COPY install/entrypoint.sh /
