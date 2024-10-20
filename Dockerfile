@@ -1,4 +1,4 @@
-FROM ros:humble-ros-base-jammy
+FROM ros:noetic
 LABEL maintainer="Vibgyor Singhvi <vibgyorasset.singhvi7@gmail.com>"
 
 # environment
