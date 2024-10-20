@@ -17,8 +17,8 @@ sudo DEBIAN_FRONTEND=noninteractive  apt-get install --no-install-recommends -y 
 	qt5dxcb-plugin \
 	terminator \
 	vim \
-	ros-humble-mavros \
-    ros-humble-mavros-extras
+	ros-noetic-mavros \
+    ros-noetic-mavros-extras
 
 	
 
